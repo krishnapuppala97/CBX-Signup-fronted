@@ -1,0 +1,275 @@
+
+/* Style for the header section */
+header {
+  background-color: #ffffff;
+  padding: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+  max-width: 100%;
+}
+
+/* Style for the social icons in the footer */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Style for the copyright notice in the footer */
+footer p {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Style for the body */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+/* App */
+/* Define gradient for background */
+.gradient-dark-blue-2 {
+  background: linear-gradient(279.18deg, #45a4ec 9.61%, #216bab 75.6%);
+  }
+
+  /* Clearfix for medium devices */
+  @media (min-width: 768px) {
+  .clearfix-md::after, .clearfix-md::before {
+  clear: both;
+  }
+  .clearfix-md:after {
+  clear: both;
+  }
+  .clearfix-md:after, .clearfix-md:before {
+  content: " ";
+  display: table;
+  }
+  }
+
+  /* Body styles */
+  body {
+  font-size: 1rem;
+  line-height: 1.625rem;
+  font-family: neue-haas-grotesk-text, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #3b3f47;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.75;
+  }
+
+  /* HTML styles */
+  html {
+  border-color: #4e5458;
+  color: #181a1b;
+  font-size: 16px;
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color-scheme: dark light !important;
+  }
+
+  /* Scrollbar styles */
+  ::-webkit-scrollbar {
+  background-color: #d2d0cc;
+  color: #5c6468;
+  }
+
+  ::-webkit-scrollbar-corner {
+  background-color: #dcdad7;
+  }
+
+  ::-webkit-scrollbar-thumb {
+  background-color: #a49f98;
+  }
+
+  /* Selection styles */
+  ::selection {
+  background-color: #3e6595 !important;
+  color: #dcdad7 !important;
+  }
+
+  /* Define section styles for first fold */
+  .first-fold.signup-form-overlap.gradient-dark-blue-2.font-color-light.banner-form.clearfix-md {
+  padding-top: 50px;
+  }
+
+  @media only screen and (min-width: 60rem) {
+  .nav-transparent .first-fold {
+  padding-top: 108px;
+  }
+  }
+
+  @media (min-width: 960px) {
+  .col-md-6 {
+  width: 50%;
+  }
+  .col-md-1,
+  .col-md-10,
+  .col-md-11,
+  .col-md-12,
+  .col-md-2,
+  .col-md-3,
+  .col-md-4,
+  .col-md-5,
+  .col-md-6,
+  .col-md-7,
+  .col-md-8,
+  .col-md-9 {
+  float: left;
+  }
+  }
+
+  @media only screen and (min-width: 60rem) {
+  .signup-form-overlap .content-left {
+  padding: 0;
+  }
+  }
+
+  .col-12,
+  .col-md-6 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  }
+
+  .company_info {
+  padding: 0 15px;
+  font-size: auto;
+  }
+
+
+
+  .border-success {
+    border-color: green !important;
+  }
+
+  .border-warning {
+    border-color: orange !important;
+  }
+
+  .border-danger {
+    border-color: red !important;
+  }
+
+
+
+
+
+
+/* SignUp APP */
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #dcdad7;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus {
+  outline: none;
+  border: 1px solid #2d8fd5;
+}
+
+button[type="submit"] {
+  background-color: rgb(72 150 209);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+
+  background-color: rgb(84, 62, 152);
+}
+
+
+/* signup-data */
+.company_info{
+  color: #fff;
+}
+
+
+
+
+/* SignUp_footer */
+
+.customer-logo img {
+  max-width: 120px;
+  height: auto;
+}
+.logo {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+}
+.img-fluid {
+  max-width: 140%;
+  height: auto;
+}
+
+.custom-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  text-decoration: none;
+}
+
+.custom-link:hover {
+  background-color: lightblue;
+  color: black;
+}

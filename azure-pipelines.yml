@@ -1,0 +1,27 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+steps:
+ - task: Npm@1
+   inputs:
+     command: 'install'
+     workingDir: 'cbx-sign-up'
+ - task: Npm@1
+   inputs:
+     command: 'custom'
+     workingDir: 'cbx-sign-up'
+     customCommand: 'run build'
+ - task: S3Upload@1
+   inputs:
+     awsCredentials: 'aws_cbx'
+     regionName: 'us-east-1'
+     bucketName: 'cbx.mycloudbuilders.com'
+     sourceFolder: ' cbx-sign-up/build/'
+     globExpressions: '**'
